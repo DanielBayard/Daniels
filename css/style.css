@@ -84,6 +84,10 @@ h1, h2, h3, h4, h5, h6, p{
      
    }
 
+   label{font-family: Rubik, Lato,lucida grande,lucida sans unicode,Tahoma,Sans-Serif;
+    font-size: 110%;
+   }
+
 
    @media screen and (max-width:1000px)
    {
@@ -111,6 +115,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 .center-text{
   text-align: center;
+ 
 }
 
 
@@ -325,10 +330,10 @@ header {
 
 
       
-        .container {                  
+        .start-page {                  
          background-color: rgb(173,197,213);        
         z-index:0;
-       
+      
        
         }
 
@@ -337,24 +342,42 @@ header {
         
 
         /* mainvideo */
-
-        
-        #large-video{
+        #largest-video, #large-video, #medium-video, #small-video{
           vertical-align:bottom;
           height: auto;
           }
 
-          #medium-video{
-            vertical-align:bottom;
-            height: auto;           
+        
+          @media screen and (min-width: 1000px)
+          {
+            #large-video{
+              
+              display: none;
+              }
+  
+  
+            #medium-video{
+              
+              display: none;
+              }
+  
+              #small-video{
+                
+                display: none;
+                }
+          
+  
+          }
+
+       
+        @media screen and (max-width: 999px) and (min-width: 730px)
+        {
+          #largest-video{
+            
+            display: none;
             }
 
-            #small-video{
-              vertical-align:bottom;
-              height: auto;             
-              }
-        @media screen and (min-width: 730px)
-        {
+
           #medium-video{
             
             display: none;
@@ -370,6 +393,10 @@ header {
 
         @media screen and (max-width: 729px) and (min-width: 525px)
         {
+          #largest-video{            
+            display: none;
+            }
+          
           #large-video{            
             display: none;
             }
@@ -384,6 +411,10 @@ header {
         }
         @media screen and (max-width: 524px) and (min-width: 281px)
         {
+          #largest-video{            
+            display: none;
+            }
+
           #large-video{            
             display: none;
             }
@@ -407,8 +438,8 @@ header {
    right: 0;
    display: flex;   
    z-index: 1;
-   padding-top: 340px;
-   padding-left: 13%;
+   padding-top: 360px;
+   padding-left: 14%;
    color: rgb(29, 42, 77);
    text-shadow: 2px 2px 5px  #53707c;
    display: flex;
@@ -429,7 +460,7 @@ header {
 /* mainvideo END */
 
 .paddingSections{
-  padding: 10% 10% 10% 10%;
+  padding: 15% 10% 10% 10%;
   
 }
 
@@ -477,7 +508,7 @@ header {
 
 .about{
   width: 100%;
-  height: 755px;
+  height: 900px;
   margin-top: 0;
   background-color: bisque; 
 
@@ -486,15 +517,146 @@ header {
 .about2 {       
   background-image: linear-gradient(to right top, #3695cf, #4199cf, #4c9ccf, #55a0cf, #5ea3cf, #63a8d2, #69acd4, #6eb1d7, #72b8dd, #76bfe2, #7ac7e8, #7fceed);
   width: 100%;
-  height: 755px;
+  height: 900px;
   margin-top: 0;
- 
     
    }
 
+   /* Kontakt */
+   
+.contact {       
+  
+  width: 100%;
+  height: 800px;
+  margin-top: 0;
+  
+   }
+
+   /* Formulär för meddelande */
+  
+  input, select, textarea, label, .holder, .col-25, .col-75, .row:after {
+    box-sizing: border-box;
+  }
+  
+  input[type=email], input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+ button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .holder {
+    border-radius: 5px;
+    background-image: linear-gradient(to right top, #3695cf, #4199cf, #4c9ccf, #55a0cf, #5ea3cf, #63a8d2, #69acd4, #6eb1d7, #72b8dd, #76bfe2, #7ac7e8, #7fceed);
+    height: 800px;
+  }
+  .by-phone{
+    background-color: bisque; 
+   
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  @media screen and (max-width: 1000px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    .by-phone{
+     
+      height: 300px;
+    }
+  }
+ /* Formulär för meddelande END*/
+
+ /* Popupp window */
 
 
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 4; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
 
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+ /* Popupp window END*/
+
+/* Footer */
+ footer{
+   height: 30px;
+  padding: 30px;
+  background: rgb(0, 18, 66);
+  color: white;
+ }
+
+ /* Footer END */
 /* Bilder */
 
 
@@ -537,6 +699,7 @@ header {
     display: flex;   
     align-items: center; 
     justify-content: center;
+    vertical-align:bottom;
    
  
    }
@@ -621,15 +784,7 @@ header {
       background-repeat: no-repeat;
      }
 
-     .mixed-img{      
      
-      background-image: url('../img/mixed-images_1500.png');
-      background-repeat: no-repeat;
-      padding-bottom: 500px;
-      margin-left: 17%;
-  
-    
-    }
      #triangle-down { 
        
       padding: 10% 5% 5% 5%;    
@@ -655,14 +810,7 @@ header {
             background-repeat: no-repeat;    
            } 
 
-           .mixed-img{      
-     
-            background-image: url('../img/mixed-images_1000.png');
-            background-repeat: no-repeat;
-            padding-bottom: 500px;
-            margin-left: 20%;
-          }
-
+          
            #triangle-down { 
        
             display: none;   
@@ -690,13 +838,8 @@ header {
             background-repeat: no-repeat;    
            } 
 
-           .mixed-img{      
-     
-            background-image: url('../img/mixed-images_1000.png');
-            background-repeat: no-repeat;
-            padding-bottom: 500px;
-            margin-left: 10%;
-          }
+           
+        
 
            #triangle-down { 
        
