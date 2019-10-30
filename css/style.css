@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6, p{
   }
 
    p{ 
-     font-size: 100%;
+     font-size: 90%;
      
    }
 
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6, p{
    }
  
     p{ 
-      font-size: 100%;
+      font-size: 80%;
       
     }
 
@@ -166,7 +166,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;  
-  padding-left: 60px;
+  padding-left: 40px;
   text-decoration: none;
   
 }
@@ -176,7 +176,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;  
-  padding-right: 70px;
+  padding-right: 30px;
   text-decoration: none;
   
 }
@@ -268,8 +268,8 @@ header {
       
 .topnav {  
   background-color: rgb(24, 75, 107);  
-   display: flex;   
- 
+  display: flex;   
+ z-index: 5;
 }
 
 
@@ -429,7 +429,7 @@ header {
 /* mainvideo END */
 
 .paddingSections{
-  padding: 10%;
+  padding: 10% 10% 10% 10%;
   
 }
 
@@ -445,6 +445,15 @@ header {
   grid-template-columns: 1fr 1fr;
   
 }
+@media screen and (max-width: 1000px) {
+  .two-columns{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+
+}
+
 
 #diamond {
   width: 0;
@@ -486,7 +495,7 @@ header {
 
 
 
-/* BackgrundsBilder */
+/* Bilder */
 
 
 #world { 
@@ -498,6 +507,8 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+
  
 
 
@@ -547,12 +558,20 @@ header {
       background-attachment: fixed;      
      }
 
+     .mixed-img{      
+      margin-top: 180px;
+      background-image: url('../img/mixed-images_1920.png');
+      background-repeat: no-repeat;
+      
+    }
+
 
 }
 
 
  @media screen and (min-width: 1000px) and (max-width:1499px)
  {
+
    
      .bluredSpace {
       background-image: url('../img/bluredSpace_1500.JPG');
@@ -563,6 +582,14 @@ header {
       background-image: url('../img/tableLaptop_1500.JPG');
      
      }
+     .mixed-img{      
+      margin-top: 200px;
+      background-image: url('../img/mixed-images_1500.png');
+      background-repeat: no-repeat;
+      
+    }
+
+
      #triangle-down { 
        
       padding: 9% 5% 5% 5%;    
@@ -586,13 +613,23 @@ header {
     
     .bluredSpace {
       background-image: url('../img/bluredSpace_1000.JPG');
-     
+      background-repeat: no-repeat;
      }
      
     .tableLaptop {
       background-image: url('../img/tableLaptop_1000.JPG');
-      
+      background-repeat: no-repeat;
      }
+
+     .mixed-img{      
+     
+      background-image: url('../img/mixed-images_1500.png');
+      background-repeat: no-repeat;
+      padding-bottom: 500px;
+      margin-left: 17%;
+  
+    
+    }
      #triangle-down { 
        
       padding: 10% 5% 5% 5%;    
@@ -610,12 +647,22 @@ header {
         {
           .bluredSpace {
             background-image: url('../img/bluredSpace_730x700.JPG');
-           
+            background-repeat: no-repeat;
            }
           
           .tableLaptop {
-            background-image:  url('../img/tableLaptop_730x700.JPG');      
+            background-image:  url('../img/tableLaptop_730x700.JPG');  
+            background-repeat: no-repeat;    
            } 
+
+           .mixed-img{      
+     
+            background-image: url('../img/mixed-images_1000.png');
+            background-repeat: no-repeat;
+            padding-bottom: 500px;
+            margin-left: 20%;
+          }
+
            #triangle-down { 
        
             display: none;   
@@ -634,12 +681,22 @@ header {
         {
           .bluredSpace {
             background-image: url('../img/bluredSpace_525x400.JPG');
+            background-repeat: no-repeat;
            
            }
           
           .tableLaptop {
-            background-image:  url('../img/tableLaptop_525x400.JPG');      
+            background-image:  url('../img/tableLaptop_525x400.JPG');  
+            background-repeat: no-repeat;    
            } 
+
+           .mixed-img{      
+     
+            background-image: url('../img/mixed-images_1000.png');
+            background-repeat: no-repeat;
+            padding-bottom: 500px;
+            margin-left: 10%;
+          }
 
            #triangle-down { 
        
@@ -657,7 +714,7 @@ header {
   
 
 
-/* BackgrundsBilder END */
+/*Bilder END */
 
 
 /* maincontent */
