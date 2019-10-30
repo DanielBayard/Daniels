@@ -443,7 +443,7 @@ header {
 .two-columns{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 4%;
+  
 }
 
 #diamond {
@@ -542,7 +542,7 @@ header {
     }
 
     .tableLaptop {
-      background: url("../img/tableLaptop_1920.JPG");      
+      background-image: url("../img/tableLaptop_1920.JPG");      
       background-repeat: no-repeat;
       background-attachment: fixed;      
      }
@@ -555,12 +555,12 @@ header {
  {
    
      .bluredSpace {
-      background: url('../img/bluredSpace_1500.JPG');
+      background-image: url('../img/bluredSpace_1500.JPG');
      
      }
      
     .tableLaptop {
-      background:  url('../img/tableLaptop_1500.JPG');
+      background-image: url('../img/tableLaptop_1500.JPG');
      
      }
      #triangle-down { 
@@ -585,12 +585,12 @@ header {
 
     
     .bluredSpace {
-      background-image: url(/img/bluredSpace_1000.JPG);
+      background-image: url('../img/bluredSpace_1000.JPG');
      
      }
      
     .tableLaptop {
-      background-image: url(/img/tableLaptop_1000.JPG);
+      background-image: url('../img/tableLaptop_1000.JPG');
       
      }
      #triangle-down { 
@@ -608,8 +608,13 @@ header {
 }
 @media screen and (max-width: 729px) and (min-width: 525px)
         {
+          .bluredSpace {
+            background-image: url('../img/bluredSpace_730x700.JPG');
+           
+           }
+          
           .tableLaptop {
-            background-image:  url(/img/tableLaptop_730x700.JPG);      
+            background-image:  url('../img/tableLaptop_730x700.JPG');      
            } 
            #triangle-down { 
        
@@ -627,9 +632,15 @@ header {
        
         @media screen and (max-width: 524px) and (min-width: 281px)
         {
+          .bluredSpace {
+            background-image: url('../img/bluredSpace_525x400.JPG');
+           
+           }
+          
           .tableLaptop {
-            background-image:  url(/img/tableLaptop_525x400.JPG);      
-           }  
+            background-image:  url('../img/tableLaptop_525x400.JPG');      
+           } 
+
            #triangle-down { 
        
             display: none;   
@@ -643,29 +654,7 @@ header {
           }
 
         }
-       
-
-@media screen and (min-width: 400px) and (max-width:649px)
-{
   
-    .bluredSpace {
-      background-image: url(/img/bluredSpace_700x700.JPG);
-      
-     }
-    
-}
-
-
-@media screen and (max-width:399px)
-{
-  
-    .bluredSpace {
-      background-image: url(/img/bluredSpace_400x400.JPG);
-      
-     }
-    
-  
-}
 
 
 /* BackgrundsBilder END */
