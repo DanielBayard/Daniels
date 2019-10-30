@@ -536,13 +536,13 @@ header {
 {
   
     .bluredSpace {
-     background-image: url(/img/backgroundImg/bluredSpace_1920.JPG);
+     background-image: url("../img/backgroundImg/bluredSpace_1920.JPG");
      background-repeat: no-repeat;
      background-attachment: fixed;
     }
 
     .tableLaptop {
-      background-image: url(/img/backgroundImg/tableLaptop_1920.JPG);      
+      background-image: url("../img/backgroundImg/tableLaptop_1920.JPG");      
       background-repeat: no-repeat;
       background-attachment: fixed;      
      }
