@@ -536,13 +536,13 @@ header {
 {
   
     .bluredSpace {
-     background: url("./backgroundImg/bluredSpace_1920.JPG");
+     background: url('../img/bluredSpace_1920.JPG');
      background-repeat: no-repeat;
      background-attachment: fixed;
     }
 
     .tableLaptop {
-      background: url("../img/backgroundImg/tableLaptop_1920.JPG");      
+      background: url("../img/tableLaptop_1920.JPG");      
       background-repeat: no-repeat;
       background-attachment: fixed;      
      }
@@ -555,12 +555,12 @@ header {
  {
    
      .bluredSpace {
-      background-image: url("../img/backgroundImg/bluredSpace_1500.JPG");
+      background-image: url("../img/bluredSpace_1500.JPG");
      
      }
      
     .tableLaptop {
-      background-image:  url("./img/backgroundImg/tableLaptop_1500.JPG");
+      background-image:  url("./img/tableLaptop_1500.JPG");
      
      }
      #triangle-down { 
