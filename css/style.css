@@ -63,18 +63,53 @@ h1, h2, h3, h4, h5, h6, p{
     
    }
 
+   #gradient_blue
+   {
+    background-image: linear-gradient(to left top, #7fceed, #7ac7e8, #76bfe2, #72b8dd, #6eb1d7, #6caacf, #69a4c7, #679dbf, #6695b4, #648da8, #62859d, #607d92);
+    color: rgb(255, 255, 255);
+     text-shadow: 1px 1px 1px  rgb(0, 0, 0);
+   }
+
+   #gradient_yellow
+   {
+    background-image: linear-gradient(to right top, #ffe4c4, #fcdfbd, #f9dab6, #f5d5af, #f2d0a8, #f0cca3, #edc99d, #ebc598, #eac292, #e8be8d, #e7bb87, #e5b882);
+    color: black;
+    text-shadow: 1px 1px 1px  rgb(129, 129, 129);
+   }
+
+
+   #font-logo{  
+    font-family: 'Gruppo';
+    font-size: 40px;
+    
+  
+  }
+
 
 
    h2{
      font-size: 250%;
      padding-bottom: 5px;
    }
+
    h3{
+    font-size: 200%;
+   width: 150px;
+   margin: 10% 0px 5% 8%;
+    padding: 10px 1px 5px 20px;
+    
+    border-radius: 30px 10px;
+   
+  
+  }
+
+
+   h4{
     font-size: 200%;
         padding-bottom: 10px;
   }
 
-  h4{
+  h6{
     font-size: 200%;
     padding-bottom: 5px;
   }
@@ -88,16 +123,40 @@ h1, h2, h3, h4, h5, h6, p{
     font-size: 110%;
    }
 
+   #p-larger{
+    font-size: 100%;
+   }
+
 
    @media screen and (max-width:1000px)
    {
-    h2{
-      font-size: 200%;
-      padding-bottom: 5px;
+
+    #font-logo{  
+      font-family: 'Gruppo';
+      font-size: 35px;
+      
+    
     }
+
+    h2{
+      font-size: 180%;
+     
+    }
+
     h3{
-     font-size: 150%;
+      font-size: 160%;
+          padding-bottom: 10px;
+    } 
+
+
+    h4{
+     font-size: 140%;
          padding-bottom: 10px;
+   }
+
+   h6{
+    font-size: 180%;
+    padding-bottom: 5px;
    }
  
     p{ 
@@ -158,7 +217,7 @@ header {
   	
   width: 100%;    
   z-index: 2;
-  background-color:rgb(186, 210, 221);
+  background-color:#bad2dd;
   height: 40px; 
   box-shadow: none;
   border-bottom: groove;
@@ -177,7 +236,7 @@ header {
 }
 
 .logoSmall{
- flex: 2;
+ 
   display: flex;
   justify-content: flex-end;
   align-items: center;  
@@ -186,12 +245,7 @@ header {
   
 }
 
-#font-logo{  
-  font-family: 'Gruppo';
-  font-size: 40px;
-  
 
-}
 
 .largeNav{
  
@@ -250,7 +304,7 @@ header {
         display: none;
       }
 
-
+     
 
     }
 
@@ -409,7 +463,7 @@ header {
               }
 
         }
-        @media screen and (max-width: 524px) and (min-width: 281px)
+        @media screen and (max-width: 524px) and (min-width: 221px)
         {
           #largest-video{            
             display: none;
@@ -427,6 +481,14 @@ header {
               }
 
         }
+        @media screen and (max-width: 321px)
+        {
+          #small-video{
+            width: 320px;
+          }
+
+
+        }
 
 
 
@@ -441,11 +503,8 @@ header {
    padding-top: 360px;
    padding-left: 14%;
    color: rgb(29, 42, 77);
-   text-shadow: 2px 2px 5px  #53707c;
-   display: flex;
+   text-shadow: 1px 1px 3px  #ffffff;
    
-  
-  
  }
 
 #center-text{
@@ -459,8 +518,21 @@ header {
 }
 /* mainvideo END */
 
-.paddingSections{
-  padding: 15% 10% 10% 10%;
+.paddingSections_about{
+  padding: 0% 10% 15% 12%;
+  
+}
+.paddingSections_contact{
+  padding: 10% 10% 15% 10%;
+  
+}
+
+.paddingSections_market1{
+  padding: 0% 3% 15% 12%;
+  
+}
+.paddingSections_market2{
+  padding: 15% 10% 15% 3%;
   
 }
 
@@ -483,6 +555,22 @@ header {
     
   }
 
+  .paddingSections_market1{
+   padding: 0% 10% 0% 12%;
+    
+  }
+  .paddingSections_market2{
+    padding: 0% 10% 15% 12%;
+    
+  }
+
+  #market_pic1{
+    display: flex;
+    align-content: flex-start;
+  }
+  
+
+ 
 }
 
 
@@ -508,26 +596,33 @@ header {
 
 .about{
   width: 100%;
-  height: 900px;
+  height: 100%;
   margin-top: 0;
   background-color: bisque; 
 
 }
 
-.about2 {       
-  background-image: linear-gradient(to right top, #3695cf, #4199cf, #4c9ccf, #55a0cf, #5ea3cf, #63a8d2, #69acd4, #6eb1d7, #72b8dd, #76bfe2, #7ac7e8, #7fceed);
+.market {       
+  background-image: linear-gradient(to right top, #bad2dd, #b6d1dd, #b2d0de, #aecfde, #aacedf, #a6cddf, #a3ccdf, #9fcbdf, #9bc9de, #97c7dd, #92c5dd, #8ec3dc);
   width: 100%;
-  height: 900px;
+  height: 100%;
   margin-top: 0;
+  
     
    }
+   
+   #market_pic1{
+    display: flex;
+    align-content: flex-end;
+  }
 
+  
    /* Kontakt */
    
 .contact {       
   
   width: 100%;
-  height: 800px;
+  height: 100%;
   margin-top: 0;
   
    }
@@ -551,7 +646,7 @@ header {
     display: inline-block;
   }
   
- button {
+ input[type=button] {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -561,20 +656,27 @@ header {
     float: right;
   }
   
-  button:hover {
+  input[type=button]:hover {
     background-color: #45a049;
   }
   
   .holder {
     border-radius: 5px;
-    background-image: linear-gradient(to right top, #3695cf, #4199cf, #4c9ccf, #55a0cf, #5ea3cf, #63a8d2, #69acd4, #6eb1d7, #72b8dd, #76bfe2, #7ac7e8, #7fceed);
+    background: linear-gradient(to left bottom, #3695cf, #4199cf, #4c9ccf, #55a0cf, #5ea3cf, #63a8d2, #69acd4, #6eb1d7, #72b8dd, #76bfe2, #7ac7e8, #7fceed);
     height: 800px;
   }
   .by-phone{
-    background-color: bisque; 
+    background: linear-gradient(to right bottom, #3695cf, #4199cf, #4c9ccf, #55a0cf, #5ea3cf, #63a8d2, #69acd4, #6eb1d7, #72b8dd, #76bfe2, #7ac7e8, #7fceed);
    
   }
+  @media screen and (max-width: 1000px) {
+    .by-phone{
+      background: linear-gradient(to left top, #3695cf, #4199cf, #4c9ccf, #55a0cf, #5ea3cf, #63a8d2, #69acd4, #6eb1d7, #72b8dd, #76bfe2, #7ac7e8, #7fceed);
+     
+    }
+    
   
+  }
   .col-25 {
     float: left;
     width: 25%;
@@ -621,15 +723,19 @@ header {
   overflow: auto; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4); 
+ 
+  
 }
 
 
-.modal-content {
-  background-color: #fefefe;
+.modal-content { 
+  
+  background-color: #d4e5f8;
   margin: 15% auto; 
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; 
+  width: 70%; 
+  
 }
 
 
@@ -642,6 +748,7 @@ header {
 
 .close:hover,
 .close:focus {
+  
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -650,6 +757,7 @@ header {
 
 /* Footer */
  footer{
+   
    height: 30px;
   padding: 30px;
   background: rgb(0, 18, 66);
@@ -660,18 +768,14 @@ header {
 /* Bilder */
 
 
-#world { 
-  position: absolute;
-  z-index: 1;
-  padding: 5%;  
-  width: 100%;
-  background-image: url(/img/backgroundImg/world);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+#crouch-robo{
+  
+position: absolute;
+  background-repeat: no-repeat;  
+   padding-top: 180px;
+   padding-left: 14%;
+   
 }
-
-
- 
 
 
 .bluredSpace {             
@@ -745,6 +849,16 @@ header {
       background-image: url('../img/tableLaptop_1500.JPG');
      
      }
+
+     #crouch-robo{
+  
+      
+         background-repeat: no-repeat;  
+         padding-top: 180px;
+   padding-left: 10%;       
+          
+       }
+
      .mixed-img{      
       margin-top: 200px;
       background-image: url('../img/mixed-images_1500.png');
@@ -783,6 +897,16 @@ header {
       background-image: url('../img/tableLaptop_1000.JPG');
       background-repeat: no-repeat;
      }
+     #crouch-robo{
+  
+      width: 90px;
+         background-repeat: no-repeat;  
+          padding-top: 190px;
+          padding-left: 34%;
+        
+          
+       }
+   
 
      
      #triangle-down { 
@@ -792,8 +916,8 @@ header {
     }
     .overlayText {
       
-      padding-top: 224px;
-      padding-left: 4%;             
+      padding-top: 229px;
+      padding-left: 5%;             
     }
 
   
@@ -809,6 +933,17 @@ header {
             background-image:  url('../img/tableLaptop_730x700.JPG');  
             background-repeat: no-repeat;    
            } 
+
+           #crouch-robo{
+  
+            width: 75px;
+               background-repeat: no-repeat;  
+                padding-top: 180px;
+                padding-left: 35%;
+              
+                
+             }
+         
 
           
            #triangle-down { 
@@ -838,7 +973,15 @@ header {
             background-repeat: no-repeat;    
            } 
 
-           
+           #crouch-robo{
+  
+           width: 70px;
+              background-repeat: no-repeat;  
+               padding-top: 180px;
+               padding-left: 30%;
+             
+               
+            }
         
 
            #triangle-down { 
