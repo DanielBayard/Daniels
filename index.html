@@ -129,7 +129,8 @@
 
  <a class="anchor" id="news"></a>
 <div class="news">   
-<h5 class="center-text">Latest News</h5>
+  
+<h5 class="center-text title_style">Latest News</h5>
   
   <div class="news-slider">
     
@@ -225,19 +226,16 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
+  var dots = document.getElementsByClassName("demo"); 
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
+    slides[i].style.display = "none";  }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+    dots[i].className = dots[i].className.replace(" active", "");  }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  
 }
 
   </script>
@@ -249,7 +247,7 @@ function showSlides(n) {
     <div class="market two-columns">
         
         <article>
-          <h3 class="gradient_yellow">Markets</h3>
+          <h3 class="title_style">Markets</h3>
           <section class="paddingSections_market1">
             <section >
               <h4>Machine Learning</h4>
@@ -347,7 +345,7 @@ function showSlides(n) {
     <div  class="about two-columns">
         
       <article>
-        <h3 class="gradient_blue">About</h3>
+        <h3 class="title_style">About</h3>
         <section class="paddingSections_about">
             <h4>What do we do?</h4>
             <p>The buissness of Machinge learning is a field with exponantial growth. Tenai AI is a full-scale custom software development company providing deep expertise in BI & Big Data services. Boasting 14 years of experience and a talented team of more than 1500 developers, they are ready to build AI-powered products of any complexity. We deliver, and support sophisticated solutions for startups, midsized companies, and government agencies alike.
@@ -383,7 +381,7 @@ function showSlides(n) {
         
 <div class="by-phone paddingSections_contact">
   
-    <h4 class="center-text">Contact</h4>
+    <h4 class="center-text title_style">Contact</h4>
      <div class="two-columns center-text">
        
        <div>
@@ -408,7 +406,7 @@ function showSlides(n) {
 
 
 <div class="holder paddingSections_contact2">
-  <h4 aria-label="Message on website" class="center-text">Leave a message</h4>
+  <h4 aria-label="Message on website" class="center-text title_style">Leave a message</h4>
   <br>
     <form>
       <div class="row">

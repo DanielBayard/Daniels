@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6, p{
     
    }
 
-   .gradient_blue
+   /* .gradient_blue
    {
     background-image: linear-gradient(to left top, #7fceed, #7ac7e8, #76bfe2, #72b8dd, #6eb1d7, #6caacf, #69a4c7, #679dbf, #6695b4, #648da8, #62859d, #607d92);
     color: rgb(255, 255, 255);
@@ -75,6 +75,11 @@ h1, h2, h3, h4, h5, h6, p{
     background-image: linear-gradient(to right top, #ffe4c4, #fcdfbd, #f9dab6, #f5d5af, #f2d0a8, #f0cca3, #edc99d, #ebc598, #eac292, #e8be8d, #e7bb87, #e5b882);
     color: black;
     text-shadow: 1px 1px 1px  rgb(255, 255, 255);
+   } */
+
+   .title_style{
+    text-decoration: overline;
+    text-decoration-color: rgb(90, 69, 97);;
    }
 
 
@@ -558,28 +563,26 @@ header {
   box-sizing: border-box;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
 .news-slider{
  position: relative;
  margin: 0% 10% 0% 10%;
  height: 630px;
- background-color: rgb(168, 206, 137);
+ background-color: rgb(247, 255, 240);
  
 }
 
 
-/* Hide the images by default */
 .mySlides {
   display: none;
   height: 630px;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
+
 .cursor {
   cursor: pointer;
 }
 
-/* Next & previous buttons */
+
 .prev,
 .next {
   cursor: pointer;
@@ -596,19 +599,19 @@ header {
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover,
 .next:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #000000;
   font-size: 20px;
@@ -626,7 +629,7 @@ header {
   
 }
 
-/* Six columns side by side */
+
 .column { 
   position: relative;
    height: 70px;
@@ -634,11 +637,11 @@ header {
   color: white;
   float: left;
   width: 25%;  
-  font-size: 4px;
+ font-size: 15px;
   padding-top: 20px;
 }
 
-/* Add a transparency effect for thumnbail images */
+
 .demo {
   opacity: 0.4;
   
@@ -647,7 +650,7 @@ header {
 .active,
 .demo:hover {
   opacity: 1;
-  border-radius: 30px;
+ 
   
 }
 
@@ -821,7 +824,7 @@ header {
    
    height: 30px;
   padding: 30px;
-  background: rgb(0, 18, 66);
+  background: rgb(0, 5, 20);
   color: white;
  }
 
@@ -885,12 +888,12 @@ header {
   }
 
   .paddingSections_market1{
-   padding: 0% 10% 0% 12%;
-    
+   padding: 0% 0% 0% 12%;
+    width: 80%;
   }
   .paddingSections_market2{
-    padding: 0% 10% 15% 12%;
-    
+    padding: 0% 0% 15% 12%;
+    width: 80%;
   }
 
   #market_pic1{
@@ -1169,10 +1172,7 @@ position: absolute;
 
            #crouch-robo{
   
-           width: 65px;
-              
-               padding-top: 160px;
-               padding-left: 67%;
+          display: none;
                  
                
             }
