@@ -240,7 +240,7 @@ header {
   width: 100%;    
   z-index: 2;
   background-color:#bad2dd;
-  height: 40px; 
+  height: 44px; 
   box-shadow: none;
   border-bottom: groove;
   border-color: rgb(42, 105, 145);
@@ -319,13 +319,10 @@ header {
     @media screen and (max-width:1000px)
 
      {
-      .largeNav{
+      .largeNav, .logoLarge{
         display: none;
       }
-      .logoLarge{
-        display: none;
-      }
-
+     
      
 
     }
@@ -333,13 +330,11 @@ header {
     @media screen and (min-width:1000px)
 
      {
-      .smallNav{
+      .smallNav, .logoSmall{
         display: none;
       }    
       
-      .logoSmall{
-        display: none;
-      }
+     
     }
 
      
@@ -362,7 +357,7 @@ header {
 
 .topnav a {
   color: white;
-  padding: 14px 14px;
+  padding: 16px 18px;
   text-decoration: none;
   font-size: 100%;
   display: block;
@@ -1204,6 +1199,9 @@ position: absolute;
             display: none;
           }
                 
+          .logoSmall{
+            padding-right: 15px;
+          }
 
         }
   
