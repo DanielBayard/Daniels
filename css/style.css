@@ -870,6 +870,30 @@ header {
   grid-template-columns: 1fr 1fr;
   
 }
+
+
+/* länkning högre pga fixed header */
+a.anchor {
+  display: block; 
+  position: relative; 
+  top: -40px; 
+  visibility: hidden; }
+
+  a.anchor2 {
+    display: block; 
+    position: relative; 
+    top: -40px; 
+    visibility: hidden; }
+   
+    @media screen and (max-width: 500px)
+{
+  a.anchor2 {
+    
+    top: 0px; 
+    }
+  
+
+}
 @media screen and (max-width: 1000px) {
   .two-columns{
     display: grid;
@@ -910,21 +934,15 @@ header {
     margin: 0% 0% 0% 0%; 
     height: 700px;
    }
-   .column {
-    
-   }
- 
-}
-/* länkning högre pga fixed header */
-/* #news, #market, #about, #contact {
- 
   
-} */
-a.anchor {
-  display: block; 
-  position: relative; 
-  top: -40px; 
-  visibility: hidden; }
+   
+}
+
+
+
+  
+
+
 
 /* Padding grid for sections END*/
 
