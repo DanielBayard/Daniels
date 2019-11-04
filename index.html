@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -57,7 +57,7 @@
                   
                   <p>Menu</p>
                   <a href="#">Home</a>
-                  <a href="#news">News</a></li>                  
+                  <a href="#news">News</a>                 
                   <a href="#market">Markets</a>
                   <a href="#about">About</a>
                   <a href="#contact">Contact</a>
@@ -250,19 +250,19 @@ function showSlides(n) {
         
         <article>
           <h3 class="title_style">Markets</h3>
-          <section class="paddingSections_market1">
+          <div class="paddingSections_market1">
             <section >
               <h4>Machine Learning</h4>
               <p>With our Industry solutions for connected manufacturing, we optimise production and logistics processes. We develop solutions to make machines communicate with each other and thus speed up production and improve safety at the same time. By collecting, visualising, and analysing machine, process, and sensor data, you can help us offer a whole new world of opportunities for companies.</p>
             </section>
             
-              <section style="padding-top: 30px;">
+              <div style="padding-top: 30px;">
                 <img class="large_img" src="./img/Machine_620.JPG" alt="healthcare">
                 <img class="medium_img" src="./img/Machine_420.JPG" alt="healthcare">
                 <img class="small_img" src="./img/Machine_250.JPG" alt="healthcare">
 
 
-              </section>
+              </div>
 
 
               <section style="padding-top: 30px;"> 
@@ -276,7 +276,7 @@ function showSlides(n) {
              
 
 
-          </section>
+            </div>
 
         </article>
 
@@ -284,11 +284,11 @@ function showSlides(n) {
             
             <article class="paddingSections_market2">
               
-              <section style="padding-top: 30px;">
+              <div style="padding-top: 30px;">
                 <img class="large_img" src="./img/Car_620.JPG" alt="healthcare">
                 <img class="medium_img" src="./img/Car_420.JPG" alt="healthcare">
                 <img class="small_img" src="./img/Car_250.JPG" alt="healthcare">
-              </section>
+              </div>
 
 
               <section style="padding-top: 30px;">
@@ -298,17 +298,13 @@ function showSlides(n) {
               </section>
 
 
-              <section  style="padding-top: 30px;">
+              <div style="padding-top: 30px;">
                 <img class="large_img" src="./img/Healthcare_620.JPG" alt="healthcare">
                 <img class="medium_img" src="./img/Healthcare_420.JPG" alt="healthcare">
                 <img class="small_img" src="./img/Healthcare_250.JPG" alt="healthcare">
-              </section>
+              </div>
 
-                            
-                
-               
-    
-               
+                     
   
   
             </article>
@@ -387,14 +383,12 @@ function showSlides(n) {
      <div class="two-columns center-text">
        
        <div>
-         <br>
-         <label for="call phone">Call:</label> <br>
+         <br>         
         <a href="tel:+46855050000">08 – 55 05 00 00</a>
        </div>
        <div>
-          <br>
-          <label for="send email">Mail:</label> <br>
-          <a href = "mailto:TenaiAI@example.com?subject = Feedback&body = Message">
+          <br>         
+          <a href = "mailto:TenaiAI@example.com">
              Contact@tenaiAi.com
               </a>
               <br>
@@ -408,7 +402,7 @@ function showSlides(n) {
 
 
 <div class="holder paddingSections_contact2">
-  <h4 aria-label="Message on website" class="center-text">Leave a message</h4>
+  <h4 class="center-text">Leave a message</h4>
   <br>
     <form>
       <div class="row">
@@ -444,7 +438,7 @@ function showSlides(n) {
         </div>
       </div>
       <div class="row">
-        <input aria-label="Send message button" type="button" id="myBtn" value="Send"></button>
+        <input aria-label="Send message button" type="button" id="myBtn" value="Send">
           <div id="myModal" class="modal">
 
               <!-- meddelande skickat -->
